@@ -1,0 +1,63 @@
+.F_Flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.F_Flex .F_Flex_flex{
+    display: flex;
+    width: fit-content;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.F_Flex .Name_text {
+    font-size: 50px;
+}
+
+.F_Flex_2{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.F_Flex_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.F_icon{
+    font-size: 30px;
+    /* border: 5px solid rgb(4, 152, 158);
+     */
+     border: 5px solid rgb(0, 201, 218);
+    padding: 0px 5px;
+    color: rgb(4, 152, 158);
+    border-radius: 5px;
+}
+
+.title2{
+    font-size: 25px;
+}
+@media only screen and (max-width: 700px) {
+    .F_Flex{
+       flex-direction: column;
+    }
+    .F_Flex .Name_text {
+        font-size: 40px;
+    }
+
+    .F_Flex_2{
+     flex-direction: column;
+    }
+    
+    
+
+}
