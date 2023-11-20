@@ -1,22 +1,21 @@
-import './App.css';
-import DiscountHead from './components/common/DiscountHead';
-import Footer from './components/common/Footer';
-import Nav from './components/common/Nav';
-import HomePage from "./components/HomePage"
-import ContectPage from './components/HomePageComponent/ContectPage';
+import { Navbar, Home, About, Services, Teacher, Contact, Footer, } from "./components/index"
+
 function App() {
+
   return (
-    <div className="App">
-      <DiscountHead/>
-      <Nav/>
-
-      <HomePage/>
-      <ContectPage/>
-    <Footer/>
-
-    </div>
-
-  );
+    <>
+      <div className="App font-Montserrat bg-Solitude">
+        {/* <AlertMsg /> */}
+        <Navbar />
+        <Home />
+        <About />
+        <Services />
+        <Teacher />
+        <Contact />
+        <Footer />
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,13 @@
+.tutor img{
+    position: absolute;
+    width: 270px;
+    top: -58px;
+    left: 20px;
+}
+
+
+@media (max-width: 920px) {
+    .tutor img {
+        display: none;
+    }
+}
