@@ -12,7 +12,7 @@ const NavLink = ({ href, link }) => {
                 duration={500}
                 offset={-50}
                 className={({ isActive }) =>
-                    `block duration-200 text-bluePrimary border-b-2
+                    `block duration-100 text-bluePrimary border-b-2
                      hover:text-bluePrimary `
                 }
             >

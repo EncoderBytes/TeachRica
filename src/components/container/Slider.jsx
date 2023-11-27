@@ -32,11 +32,11 @@ const Slider = () => {
             >
                 {ServiceData.map((item) => (
                     <SwiperSlide key={item.id}>
-                        <div className="w-11/12 m-auto">
-                            <div className="flex flex-col items-center justify-center gap-6 bg-white mb-24  rounded-2xl py-16">
+                        <div className="mx-2">
+                            <div className="flex flex-col items-center justify-center gap-6 bg-white mb-24  rounded-2xl py-16 px-10 border-b-8 border-blueSecondary">
                                 <img src={item.image} alt="" className="w-16" />
-                                <p className="text-2xl font-bold">{item.name}</p>
-                                <p className="text-xs font-medium text-center p-2">{item.message}</p>
+                                <p className="text-2xl font-semibold">{item.name}</p>
+                                <p className="text-base font-medium text-center p-2">{item.message}</p>
                                 <div className="flex gap-1">
                                     <FaStar className="text-yellow" />
                                     <FaStar className="text-yellow" />

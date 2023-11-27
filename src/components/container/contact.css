@@ -1,26 +1,31 @@
 .contact {
-    background-image: url('../../assets/contactCont.png');
-    height: 600px;
+    height: 700px;
     width: 100%;
     flex-shrink: 0;
-    mix-blend-mode: multiply;
+    background-image: url('../../assets/contactBg.png'), url('../../assets/contactCont.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    /* Blend mode for the images */
 }
+
 
 /* button, */
 input {
     width: 566px;
 }
 
-.phoneSet {
+/* .phoneSet {
     width: 190px;
     flex-shrink: 0;
     position: absolute;
     top: 165px;
     right: 50px;
-}
+} */
 
 
 @media (max-width: 768px) {
+
     /* button, */
     input {
         width: 355px;

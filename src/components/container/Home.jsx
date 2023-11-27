@@ -1,21 +1,25 @@
 import React from 'react'
+
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+// images
 import home from "../../assets/home.png"
 import pair1last from "../../assets/pair1last.png"
 import pair1mid from "../../assets/pair1mid.png"
 import pair1top from "../../assets/pair1top.png"
-
-import imgOne from "../../assets/Ellipse 8.png"
-import imgTwo from "../../assets/Ellipse 9.png"
-import imgThree from "../../assets/Ellipse 10.png"
-import imgFour from "../../assets/Ellipse 11.png"
-import imgFive from "../../assets/Ellipse 12.png"
 import rectangle from "../../assets/Rectangle 2.png"
 
 import { FaStar } from "react-icons/fa";
-
 import { Link } from "react-scroll"
 
 const Home = () => {
+
+  const scrollToContact = () => {
+    scroll.scrollTo('contact', {
+      duration: 800,
+      smooth: 'easeInOutQuart',
+    });
+  };
+
   return (
     <div className="">
       <div className='flex flex-col items-center justify-center relative' id='home'
@@ -58,11 +62,11 @@ const Home = () => {
 
             </div>
 
-            <p className='text-white font-semibold'>How it works?  </p>
+            <p className='text-white font-semibold text-2xl'>How it works?  </p>
           </div>
 
           <div className=" w-7/12 flex flex-col gap-32">
-            {/* relative */} 
+            {/* relative */}
             <div className="flex flex-col gap-10 mt-10 relative ">
               <div className='text-6xl font-extrabold w-100 m-auto text-center leading-normal relative z-10'>
                 <span className='text-blueSecondary '>Grow</span> Your Learning Skill By Tuition
@@ -72,11 +76,14 @@ const Home = () => {
               <p className="text-base font-semibold w-5/6 text-center m-auto ">Build your future with our quality education. The best and largest all in one online and home tuition services in the region.</p>
 
               <div className="flex items-center justify-center gap-4 ">
-                <button className="text-sm py-3 px-7 text-white bg-blueSecondary rounded-3xl font-semibold">Register Now</button>
-                <button className="text-sm py-3 px-7 bg-gray rounded-3xl font-semibold">Contact Us</button>
+                <ScrollLink to="contact" smooth={true} duration={800} className="text-sm py-3 px-7 text-white bg-blueSecondary rounded-3xl font-semibold cursor-pointer">
+                  Register Now
+                </ScrollLink>
+
+                <ScrollLink to="contact" smooth={true} duration={800} className="text-sm py-3 px-7 bg-gray rounded-3xl font-semibold cursor-pointer">
+                  Contact Us
+                </ScrollLink>
               </div>
-
-
 
               <div className="absolute top-36 left-96 z-0 object-cover ">
                 <img src={rectangle} className='w-56 h-4' alt="" />
@@ -140,7 +147,7 @@ const Home = () => {
               </div>
 
               <div className="bg-white w-100 rounded-lg py-8 px-2 flex flex-col  items-center gap-3">
-                <p className=" font-semibold text-sm block m-auto w-5/6 text-center">I have received a great response from students and their parents.</p>
+                <p className=" font-medium text-sm block m-auto w-5/6 text-center">I have received a great response from students and their parents.</p>
 
                 <div className="flex relative w-44 h-12 ">
                   <img src="https://s3-alpha-sig.figma.com/img/2cf2/8529/c55d9beef148505189ec77359141ede7?Expires=1701648000&Signature=CSQbTNk2asLxRjfIE6mhCI4PW9c9KwZJn4DTnZcpFZnP0LdFPVCl6rifoOLHBSuYvwKnqArMMeTTyTgCwt8aqYoqW9iKQV4aUOcyxRGjN9g5XDZNdPN7r-2OmuvDJ25zio-okaQvQcR6I8AhFF9CA9CPGmlUS~6Sjd40Q7yw0I1AqJp~gWLN1PwYlYRGk8LPCDdra6ZeYbq2plLx0Fc2Wa5wQwoUe7qsGEibLlWEQcCA6PKy8Z9sMN4wR6pmtAQ8Ypq7as6vSOQQb8inacQeL8P3fIsZz~tr2dOfR71jCZZ~9yzV2ISHc-fMAfzjZmBRsBIpuyPkXS1tYZ0dj1ayLQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" className='w-11 rounded-full border-4 border-white absolute top-0' />
@@ -166,7 +173,6 @@ const Home = () => {
             </div>
           </div>
 
-
         </div>
         <div className="absolute bottom-0 right-32 z-0 ">
           <svg xmlns="http://www.w3.org/2000/svg" width="251" height="252" viewBox="0 0 251 132" fill="none" className='w-48'>
@@ -174,12 +180,9 @@ const Home = () => {
           </svg>
         </div>
 
-        {/* <div className="absolute top-80 left-96 w-full h-full object-cover ">
-          <img src={rectangle} className='w-48' alt="" />
-        </div> */}
       </div >
 
-      <div className="bg-bluePrimary h-48 flex items-center justify-center text-center z-10">
+      <div className="bg-bluePrimary h-52 flex items-center justify-center text-center z-10">
         <div className="w-11/12 m-auto flex items-center justify-center text-center text-white" >
           <div className=" m-auto flex sm:flex-row flex-col items-center justify-center sm:gap-4 gap-1">
             <span className='font-extrabold text-lg sm:text-2xl'>05</span>

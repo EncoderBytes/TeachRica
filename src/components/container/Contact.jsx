@@ -1,15 +1,16 @@
 import React from 'react'
 import "./contact.css"
-import contactLogo from "../../assets/contactLogo.png"
 import contactPhone from "../../assets/contactPhone.png"
 
 const Contact = () => {
   return (
     <div className='contact mb-10 relative' id='contact'>
       <div className="pt-20">
-        <div className='flex justify-center items-center gap-4 mb-10'>
-          <img src={contactLogo} alt="" className='w-7 h-7 flex-shrink-0' />
-          <p className='font-extrabold text-2xl'>Contact Us Now</p>
+        <div className='flex justify-center items-center gap-3 mb-10'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+            <path d="M33.1716 6.82844L6.82843 33.1716C4.30857 35.6914 -2.66344e-07 33.9068 -4.22114e-07 30.3431L-1.57361e-06 4C-1.67017e-06 1.79086 1.79086 1.67017e-06 4 1.57361e-06L30.3431 4.22115e-07C33.9068 2.66344e-07 35.6914 4.30858 33.1716 6.82844Z" fill="#FFD15C" />
+          </svg>
+          <p className='font-bold text-3xl text-white'>Contact Us Now</p>
         </div>
 
         <div className=" flex flex-col justify-center items-center">
@@ -46,8 +47,12 @@ const Contact = () => {
 
       </div>
 
-      <div className="phoneSet">
-        <img src={contactPhone} alt="" className='phhhh' />
+      <div className="phoneSet relative">
+        <img src={contactPhone} alt="" className='phhhh w-72 absolute bottom-20 right-24 z-10' />
+
+        <svg xmlns="http://www.w3.org/2000/svg" className='absolute bottom-20 right-24 z-0' width="178" height="179" viewBox="0 0 178 179" fill="none" >
+          <circle cx="89.1799" cy="89.5011" r="88.5503" transform="rotate(-73.421 89.1799 89.5011)" fill="#FFD15C" />
+        </svg>
       </div>
     </div>
   )

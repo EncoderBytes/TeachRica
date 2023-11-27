@@ -30,6 +30,9 @@ export default {
       fontSize: {
         text6Xl: "74px",
       },
+      width: {
+        wAbout: "442px"
+      }
     },
     screens: {
       xs: "480px",
