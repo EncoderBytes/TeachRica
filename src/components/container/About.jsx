@@ -5,12 +5,12 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const About = () => {
 
-  const scrollToContact = () => {
-    scroll.scrollTo('contact', {
-      duration: 800,
-      smooth: 'easeInOutQuart',
-    });
-  };
+  // const scrollToContact = () => {
+  //   scroll.scrollTo('contact', {
+  //     duration: 800,
+  //     smooth: 'easeInOutQuart',
+  //   });
+  // };
 
   return (
     <div className="w-10/12 m-auto py-24" id='about'>

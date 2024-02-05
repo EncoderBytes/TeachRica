@@ -99,7 +99,7 @@ const Home = () => {
                 offset={-50}
                 className='font-boldtransition-all duration-300 cursor-pointer'
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="29" viewBox="0 0 18 29" fill="none" className='scroll-smooth'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="29" viewBox="0 0 18 29" fill="none" className='scroll-smooth cursor-pointer'>
                   <rect x="1.09375" y="1" width="15.8125" height="26.5" rx="7.90625" stroke="#1E1E1E" strokeWidth="2" strokeLinejoin="round" />
                   <line x1="9.6438" y1="8.73483" x2="9.6438" y2="13.25" stroke="#1E1E1E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
